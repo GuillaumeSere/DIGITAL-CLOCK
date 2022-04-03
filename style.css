@@ -61,6 +61,7 @@ body{
     height: 25px;
     width: 22px;
     background: #000000;
+    border-bottom: 1px solid #898989;
 }
 
 .clock::before{
