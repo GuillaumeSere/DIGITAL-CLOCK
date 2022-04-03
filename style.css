@@ -58,7 +58,33 @@ body{
     border-bottom-right-radius: 10px;
     margin-bottom: 135px;
     margin-left: 472px;
-    height: 25px;
+    height: 28px;
+    width: 22px;
+    background: #000000;
+    border-bottom: 1px solid #898989;
+}
+
+.reg2{
+    transform: rotate(25deg);
+    position: absolute;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: -35px;
+    margin-left: 438px;
+    height: 28px;
+    width: 22px;
+    background: #000000;
+    border-bottom: 1px solid #898989;
+}
+
+.reg3{
+    transform: rotate(-25deg);
+    position: absolute;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 357px;
+    margin-left: 418px;
+    height: 28px;
     width: 22px;
     background: #000000;
     border-bottom: 1px solid #898989;
