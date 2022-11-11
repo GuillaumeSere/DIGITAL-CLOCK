@@ -125,7 +125,7 @@ body{
     position: absolute;
     width: 300px;
     height: 300px;
-    border: 2px solid black;
+    border: 2px solid black ;
     border-radius: 50%;
     display: flex;
     justify-content: center;
