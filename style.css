@@ -33,7 +33,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border :1px solid  aqua;;
+    border :1px solid  aqua;
 }
 
 .clock{
@@ -206,11 +206,11 @@ body{
 
 #time div:last-child{
     font-size: 0.5em;
-    display: flex;
     justify-content: center;
     align-items: center;
     margin-right: -4rem;
     color: aqua;
+    display: none;
 }
 
 #time div:nth-child(2)::after{
