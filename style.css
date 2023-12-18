@@ -229,3 +229,29 @@ body{
         opacity:0;
     }
 }
+
+@media (max-width:640px){
+    .clock{
+        width: 350px;
+        height: 350px;
+    }
+    .clock span{
+        margin: 0.5rem;
+        font-size: 12px;
+    }
+    .reg{
+        margin-left: 367px;
+    }
+    .reg2{
+        margin-left: 310px;
+        margin-bottom: -62px;
+    }
+    .reg3{
+        margin-left: 313px;
+        margin-bottom: 334px;
+    }
+    .circle::before{
+        width: 10px;
+        height: 10px;
+    }
+}
