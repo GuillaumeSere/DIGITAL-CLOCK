@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,16 @@
     <meta name="google-site-verification" content="9MVcxa4rkcfZPi6VUf40CfGKhPsqgGj4OmedHLIFRQY" />
     <title>DIGITAL-CLOCK</title>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-568BTC8B61"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-568BTC8B61');
+</script>
+
 <body>
 
     <div class="container">
@@ -43,7 +54,7 @@
             <div id="ampm">AM</div>
         </div>
     </div>
-    
+
 
     <script>
         let hr = document.querySelector('#hr');
@@ -51,37 +62,38 @@
         let sc = document.querySelector('#sc');
 
         setInterval(() => {
-        let day = new Date();
-        let hh = day.getHours() * 30;
-        let mm = day.getMinutes() * 6;
-        let ss = day.getSeconds() * 6;
+            let day = new Date();
+            let hh = day.getHours() * 30;
+            let mm = day.getMinutes() * 6;
+            let ss = day.getSeconds() * 6;
 
-        hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
-        mn.style.transform = `rotateZ(${mm}deg)`;
-        sc.style.transform = `rotateZ(${ss}deg)`;
+            hr.style.transform = `rotateZ(${hh + (mm / 12)}deg)`;
+            mn.style.transform = `rotateZ(${mm}deg)`;
+            sc.style.transform = `rotateZ(${ss}deg)`;
 
 
-        let hours = document.getElementById('hours');
-        let minutes = document.getElementById('minutes');
-        let seconds = document.getElementById('seconds');
-        let ampm = document.getElementById('ampm');
+            let hours = document.getElementById('hours');
+            let minutes = document.getElementById('minutes');
+            let seconds = document.getElementById('seconds');
+            let ampm = document.getElementById('ampm');
 
-        let h = new Date().getHours();
-        let m = new Date().getMinutes();
-        let s = new Date().getSeconds();
+            let h = new Date().getHours();
+            let m = new Date().getMinutes();
+            let s = new Date().getSeconds();
 
-        let am = h >= 12 ? "PM" : "AM";
+            let am = h >= 12 ? "PM" : "AM";
 
-        h = (h < 10) ? "0" + h : h
-        m = (m < 10) ? "0" + m : m
-        s = (s < 10) ? "0" + s : s
+            h = (h < 10) ? "0" + h : h
+            m = (m < 10) ? "0" + m : m
+            s = (s < 10) ? "0" + s : s
 
-        hours.innerHTML = h;
-        minutes.innerHTML = m;
-        seconds.innerHTML = s;
-        ampm.innerHTML = am;
+            hours.innerHTML = h;
+            minutes.innerHTML = m;
+            seconds.innerHTML = s;
+            ampm.innerHTML = am;
         })
 
     </script>
 </body>
+
 </html>
